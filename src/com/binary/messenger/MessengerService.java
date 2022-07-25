@@ -17,9 +17,9 @@ public class MessengerService {
 			// 1. Encode a string as its binary string representation
 			// 2. Decode a binary string representation to the original string
 			// 3. Stop the service
-			System.out.println("1. Type 'encode' to encode a string into its binary representation:");
-			System.out.println("2. Type 'decode' to decode a binary string:");
-			System.out.println("3. Type 'quit' to stop");
+			System.out.println("1. Type 'encode' to encode a string into its binary representation.");
+			System.out.println("2. Type 'decode' to decode a binary string.");
+			System.out.println("3. Type 'quit' to stop.");
 
 			String choice = scanner.nextLine();
 			

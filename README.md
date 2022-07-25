@@ -6,23 +6,23 @@ Run the messenger service `java MessengerService.java`:
 
 ```text
 Welcome to the Binary Messenger!
-1. Type 'encode' to encode a string into its binary representation:
-2. Type 'decode' to decode a binary string:
-3. Type 'quit' to stop
+1. Type 'encode' to encode a string into its binary representation.
+2. Type 'decode' to decode a binary string.
+3. Type 'quit' to stop.
 encode
 Enter string to be encoded:
 secret message
 01110011 01100101 01100011 01110010 01100101 01110100 00100000 01101101 01100101 01110011 01110011 01100001 01100111 01100101
-1. Type 'encode' to encode a string into its binary representation:
-2. Type 'decode' to decode a binary string:
-3. Type 'quit' to stop
+1. Type 'encode' to encode a string into its binary representation.
+2. Type 'decode' to decode a binary string.
+3. Type 'quit' to stop.
 decode
 Enter binary string to be decoded:
 01110011 01100101 01100011 01110010 01100101 01110100 00100000 01101101 01100101 01110011 01110011 01100001 01100111 01100101
 secret message
-1. Type 'encode' to encode a string into its binary representation:
-2. Type 'decode' to decode a binary string:
-3. Type 'quit' to stop
+1. Type 'encode' to encode a string into its binary representation.
+2. Type 'decode' to decode a binary string.
+3. Type 'quit' to stop.
 quit
 Shutting down messenger service. Thanks for stopping by!
 ```
