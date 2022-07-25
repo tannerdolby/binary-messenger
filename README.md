@@ -1,20 +1,6 @@
 # Binary Messenger
 A binary messenger service for encoding strings to their binary representation and decoding binary strings to the original string.
 
-## Example Usage
-If you don't need to run the interactive Messenger Service, then just grab a copy of `BinaryMessenger.java` from the `com.binary.messenger` package and utilize the available utility methods.
-
-```java
-BinaryMessenger messenger = new BinaryMessenger();
-
-String s = "hello, world!";
-String binaryStr = messenger.wordToBinary(s);
-System.out.println(binaryStr);
-// 01101000 01100101 01101100 01101100 01101111 00101100 00100000 01110111 01101111 01110010 01101100 01100100 00100001
-System.out.println(messenger.decodeBinaryWord(binaryStr));
-// hello, world!
-```
-
 ## Messenger Service Demo
 Run the messenger service `java MessengerService.java`:
 
@@ -39,4 +25,19 @@ secret message
 3. Type 'quit' to stop
 quit
 Shutting down messenger service. Thanks for stopping by!
+```
+
+## Example Usage
+If you don't need to run the interactive Messenger Service, then just grab a copy of `BinaryMessenger.java` from the `com.binary.messenger` package and utilize the available utility methods.
+
+```java
+BinaryMessenger messenger = new BinaryMessenger();
+String s = "hello, world!";
+String binaryStr = messenger.wordToBinary(s);
+
+System.out.println(binaryStr);
+// 01101000 01100101 01101100 01101100 01101111 00101100 00100000 01110111 01101111 01110010 01101100 01100100 00100001
+
+System.out.println(messenger.decodeBinaryWord(binaryStr));
+// hello, world!
 ```
