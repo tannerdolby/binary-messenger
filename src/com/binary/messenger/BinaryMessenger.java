@@ -11,12 +11,12 @@ class BinaryMessenger {
 	 * @return a binary string containing all the bits represented by each character
 	 *         from the input string.
 	 */
-	public String stringToBinary(String word) {
-		String s = "";
-		for (Character ch : word.toCharArray()) {
-			s += leftPad(binaryString(ch.charValue()), 8) + " ";
+	public String stringToBinary(String s) {
+		String binaryStr = "";
+		for (Character ch : s.toCharArray()) {
+			binaryStr += leftPad(binaryString(ch.charValue()), 8) + " ";
 		}
-		return s.trim();
+		return binaryStr.trim();
 	}
 
 	/**
@@ -35,9 +35,9 @@ class BinaryMessenger {
 	 * @param binaryWord a string of bits.
 	 * @return the decoded binary string as a normal string.
 	 */
-	public String decodeBinaryString(String binaryWord) {
+	public String decodeBinaryString(String binaryStr) {
 		String s = "";
-		for (String letter : binaryWord.split(" ")) {
+		for (String letter : binaryStr.split(" ")) {
 			s += binaryCodePointToString(letter);
 		}
 		return s;
