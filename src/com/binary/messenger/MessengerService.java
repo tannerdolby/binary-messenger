@@ -11,12 +11,6 @@ public class MessengerService {
 	public static HashMap<Integer, String> menuItems = new HashMap<>();
 	public static HashMap<String, String> messages = new HashMap<>();
 	
-	public static void initMenu() {
-		menuItems.put(1, "Type 'encode' to encode a string into its binary representation.");
-		menuItems.put(2, "Type 'decode' to decode a binary string.");
-		menuItems.put(3, "Type 'quit' to stop");
-	}
-	
 	public static void main(String[] args) {
 		BinaryMessenger messenger = new BinaryMessenger();
 		Scanner scanner = new Scanner(System.in);
@@ -47,6 +41,12 @@ public class MessengerService {
 			}
 		}
 		scanner.close();
+	}
+	
+	public static void initMenu() {
+		menuItems.put(1, "Type 'encode' to encode a string into its binary representation.");
+		menuItems.put(2, "Type 'decode' to decode a binary string.");
+		menuItems.put(3, "Type 'quit' to stop");
 	}
 	
 	public static void showMenu() {
