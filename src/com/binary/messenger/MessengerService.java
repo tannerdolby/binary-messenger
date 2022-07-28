@@ -59,11 +59,11 @@ public class MessengerService {
 		System.out.println(menuText);
 		String s = scanner.nextLine();
 		
-		if (menuItem == 1) processMessage(1, s, messenger.stringToBinary(s));
-		if (menuItem == 2) processMessage(2, s, messenger.decodeBinaryString(s));
+		if (menuItem == 1) processMessage(s, messenger.stringToBinary(s));
+		if (menuItem == 2) processMessage(s, messenger.decodeBinaryString(s));
 	}
 	
-	public static void processMessage(int menuItem, String s, String res) {
+	public static void processMessage(String s, String res) {
 		if (messages.containsKey(s)) {
 			System.out.println(messages.get(s));
 			return;
